@@ -5,8 +5,8 @@ const doc = {
     title: "CSE 341 Project 2 API",
     description: "Items API Documentation for CRUD Operations",
   },
-  host: "localhost:3000",
-  schemes: ["http"],
+  host: "cse341project2-0k9h.onrender.com",
+  schemes: ["https"],
 };
 
 const outputFile = "./swagger.json";
