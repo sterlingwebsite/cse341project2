@@ -77,7 +77,6 @@ const updateItem = async (req, res, next) => {
   }
 };
 
-// DELETE /items/:id - Removes a document matching the ID
 const deleteItem = async (req, res, next) => {
   try {
     if (!ObjectId.isValid(req.params.id)) {
