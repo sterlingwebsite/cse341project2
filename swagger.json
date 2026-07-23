@@ -5,12 +5,33 @@
     "description": "Items API Documentation for CRUD Operations",
     "version": "1.0.0"
   },
-  "host": "cse341project2-0k9h.onrender.com",
-  "basePath": "/",
+  "basePath": "/api-docs",
   "schemes": [
+    "http",
     "https"
   ],
   "paths": {
+    "/login": {
+      "get": {
+        "description": "<p style='color: #b0b5bc;'>CLICK THIS ARROW TO LOG IN LOCALLY: <a href='http://localhost:3000/login' target='_blank' style='color: #ffffff; background-color: #24292e; padding: 10px 15px; border-radius: 5px; text-decoration: none; display: inline-block; font-weight: bold;'>➡️</a></p><p style='color: #b0b5bc;'>CLICK THIS ARROW TO LOG IN TO RENDER: <a href='https://cse341project2-0k9h.onrender.com/api-docs/login' target='_blank' style='color: #ffffff; background-color: #24292e; padding: 10px 15px; border-radius: 5px; text-decoration: none; display: inline-block; font-weight: bold;'>➡️</a></p>",
+        "responses": {
+          "200": {
+            "description": "Redirecting to GitHub OAuth"
+          }
+        }
+      }
+    },
+
+    "/logout": {
+      "get": {
+        "description": "Logs the user out and clears their active session.",
+        "responses": {
+          "200": {
+            "description": "Logged out successfully"
+          }
+        }
+      }
+    },
     "/items/": {
       "get": {
         "description": "",
@@ -27,7 +48,7 @@
         }
       },
       "post": {
-        "description": "",
+        "description": "Requires authentication.",
         "parameters": [
           {
             "name": "body",
@@ -64,6 +85,9 @@
           "201": {
             "description": "Created"
           },
+          "401": {
+            "description": "Unauthorized - Must log in first"
+          },
           "400": {
             "description": "Bad Request"
           },
@@ -75,7 +99,7 @@
     },
     "/items/{id}": {
       "put": {
-        "description": "",
+        "description": "Requires authentication.",
         "parameters": [
           {
             "name": "id",
@@ -118,6 +142,9 @@
           "204": {
             "description": "No Content"
           },
+          "401": {
+            "description": "Unauthorized - Must log in first"
+          },
           "400": {
             "description": "Bad Request"
           },
@@ -127,7 +154,7 @@
         }
       },
       "delete": {
-        "description": "",
+        "description": "Requires authentication.",
         "parameters": [
           {
             "name": "id",
@@ -139,6 +166,9 @@
         "responses": {
           "204": {
             "description": "No Content"
+          },
+          "401": {
+            "description": "Unauthorized - Must log in first"
           },
           "400": {
             "description": "Bad Request"
