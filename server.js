@@ -32,12 +32,9 @@ app.use(passport.session());
 
 const isProduction = process.env.RENDER !== undefined;
 
-const clientId = isProduction
-  ? process.env.RENDER_GITHUB_CLIENT_ID
-  : process.env.GITHUB_CLIENT_ID;
-const clientSecret = isProduction
-  ? process.env.RENDER_GITHUB_CLIENT_SECRET
-  : process.env.GITHUB_CLIENT_SECRET;
+const clientId = process.env.GITHUB_CLIENT_ID;
+const clientSecret = process.env.GITHUB_CLIENT_SECRET;
+
 const callbackUrl = isProduction
   ? "https://onrender.com"
   : `http://localhost:${port}/github/callback`;

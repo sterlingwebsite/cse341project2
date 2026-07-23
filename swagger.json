@@ -5,7 +5,7 @@
     "description": "Items API Documentation for CRUD Operations",
     "version": "1.0.0"
   },
-  "basePath": "/api-docs",
+  "basePath": "/",
   "schemes": [
     "http",
     "https"
