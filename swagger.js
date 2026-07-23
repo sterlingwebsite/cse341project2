@@ -5,6 +5,7 @@ const doc = {
     title: "CSE 341 Project 2 API",
     description: "Items and Users API Documentation for CRUD Operations",
   },
+  host: "",
   basePath: "/",
   schemes: ["https", "http"],
   paths: {
