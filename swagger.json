@@ -13,7 +13,7 @@
   "paths": {
     "/login": {
       "get": {
-        "description": "<p style='color: #b0b5bc;'>CLICK THIS ARROW TO LOG IN LOCALLY: <a href='http://localhost:3000/login' target='_blank' style='color: #ffffff; background-color: #24292e; padding: 10px 15px; border-radius: 5px; text-decoration: none; display: inline-block; font-weight: bold;'>➡️</a></p><p style='color: #b0b5bc;'>CLICK THIS ARROW TO LOG IN TO RENDER: <a href='https://cse341project2-0k9h.onrender.com/api-docs/login' target='_blank' style='color: #ffffff; background-color: #24292e; padding: 10px 15px; border-radius: 5px; text-decoration: none; display: inline-block; font-weight: bold;'>➡️</a></p>",
+        "description": "<p style='color: #b0b5bc;'>CLICK THIS ARROW TO LOG IN LOCALLY: <a href='http://localhost:3000/login' target='_blank' style='color: #ffffff; background-color: #24292e; padding: 10px 15px; border-radius: 5px; text-decoration: none; display: inline-block; font-weight: bold;'>➡️</a></p><p style='color: #b0b5bc;'>CLICK THIS ARROW TO LOG IN TO RENDER: <a href='https://cse341project2-0k9h.onrender.com/login' target='_blank' style='color: #ffffff; background-color: #24292e; padding: 10px 15px; border-radius: 5px; text-decoration: none; display: inline-block; font-weight: bold;'>➡️</a></p>",
         "responses": {
           "200": {
             "description": "Redirecting to GitHub OAuth"
