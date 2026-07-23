@@ -36,7 +36,7 @@ const clientId = process.env.GITHUB_CLIENT_ID;
 const clientSecret = process.env.GITHUB_CLIENT_SECRET;
 
 const callbackUrl = isProduction
-  ? "https://onrender.com"
+  ? "https://cse341project2-0k9h.onrender.com/github/callback"
   : `http://localhost:${port}/github/callback`;
 
 passport.use(
